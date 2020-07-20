@@ -1,0 +1,72 @@
+.promo {
+    min-height: 680px;
+    background: url(../img/main.png) center (center / cover) no-repeat;
+    padding: 132px 0 80px 0;
+    &__glopt {
+        color: #fff;
+        font-size: 24px;
+        font-weight: 300;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    &__header {
+        color: $main-color;
+        font-size: 72px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 87px;
+        margin-bottom: 0;
+        margin-top: 26px;
+    }
+    &__subheader {
+        color: #fff;
+        font-size: 42px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+        line-height: 45px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    &__divider {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 809px;
+        margin: 0 auto;
+        margin-top: 38px;
+        .dot {
+            width: 9px;
+            height: 9px;
+            background-color: #fff;
+            border-radius: 100%;
+        }
+        .line {
+            height: 1px;
+            width: 48%;
+            background-color: #fff;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__utp-item {
+        width: 255px;
+        margin: 30px 15px;
+        margin-top: 27px;
+        img {
+            display: block;
+            margin: 0 auto;
+            min-width: 67px;
+        }
+    }
+    &__descr {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 300;
+        text-align: center;
+    }
+}

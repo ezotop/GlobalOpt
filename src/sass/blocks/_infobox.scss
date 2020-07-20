@@ -1,0 +1,22 @@
+.infobox {
+    width: 100%;
+    &__header {
+        color: $main-color;
+        font-size: 16px;
+        font-weight: 700;
+    }
+    &__descr {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+    }
+    &_center {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 11px;
+        text-align: center;
+        &_mini {
+            margin-top: 7px;
+        }
+    }
+}

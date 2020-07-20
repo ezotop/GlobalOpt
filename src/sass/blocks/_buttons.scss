@@ -1,0 +1,26 @@
+.button {
+    width: 160px;
+    height: 45px;
+    border: none;
+    border-radius: 25px;
+    background-color: $main-color;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    outline: none;
+    &_count {
+        display: block;
+        width: 230px;
+        height: 57px;
+        margin: 0 auto;
+        font-size: 15px;
+        font-weight: 700;
+    }
+    &_submit {
+        display: block;
+        margin: 0 auto;
+        width: 180px;
+        margin-top: 30px;
+    }
+}

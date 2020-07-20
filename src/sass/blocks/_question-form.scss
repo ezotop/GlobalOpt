@@ -1,0 +1,26 @@
+.question-form {
+    min-height: 438px;
+    padding: 62px 0 79px 0;
+    background: url('../img/fourth.png') center (center / cover) no-repeat;
+    &__wrapper {
+        margin: 0 auto;
+        max-width: 896px;
+    }
+    &__header-block {
+        padding-top: 10px;
+        height: 68px;
+        background: $second-color;
+    }
+    &__header {
+        color: #fff;
+        font-size: 19px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__subheader {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+    }
+}

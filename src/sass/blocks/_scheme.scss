@@ -1,0 +1,18 @@
+.scheme {
+    min-height: 454px;
+    padding: 50px 0 50px 0;
+    background-color: #f3f3f3;
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item {
+        margin: 27px 11px 0 11px;
+        max-width: 263px;
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
