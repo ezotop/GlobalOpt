@@ -1,12 +1,20 @@
 .feed-form {
     position: relative;
     margin-top: 64px;
-    height: 166px;
+    min-height: 166px;
     border: 1px solid #c4c4c4;
     padding-top: 68px;
+    padding-bottom: 20px;
     &__wrapper {
         display: flex;
         justify-content: center;
+        align-items: center;
+        &_modal {
+            flex-wrap: wrap;
+            .feed-form__window {
+                margin-bottom: 8px;
+            } 
+        }
     }
     &__window {
         margin: 0 3px;
@@ -15,11 +23,13 @@
         border: 1px solid #c9c9c9;
         border-radius: 25px;
         padding: 0 26px;
+        &:focus {
+            outline: none;
+        }
     }
     &_question {
         border: none;
-        padding: 0 40px;
-        padding-top: 18px;
+        padding: 18px 40px 20px 40px;
         margin: 0 auto;
         min-height: 231px;
         background-color: rgba($color: #f3f3f3, $alpha: 0.7);

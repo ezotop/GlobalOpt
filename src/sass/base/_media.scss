@@ -99,7 +99,7 @@
         flex-wrap: wrap;
     }
     .feed-form_question {
-        padding: 18px 10px 0 10px;
+        padding: 18px 10px 20px 10px;
     }
     .footer {
         min-height: 480px;
@@ -122,43 +122,40 @@
 @media (max-width: 767px) {
     nav {
         width: 100vw;
+        padding-top: 40px;
     }
-	.menu {
+	.menu__list {
 		position: fixed;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		top: 0;
 		left: -100%;
-		width: 50%;
+		width: 80%;
 		height: 100vh;
-		padding: 20px 15px;
 		background-color: rgba(0, 0, 0, 0.8);
 		transition: 0.6s all;
 		&_active {
             left: 0;
         }
-		&_item {
-            padding-right: 0;
-			border: none;
-        }
-		&_link {
-            font-size: 20px;
-            margin-top: 20px;
-        }
     }
     .menu {
-        &__logo {
-            margin-left: 40px;
+        &__item {
+            border: none;
+            padding: 15px 0;
         }
-        &__list {
-            //display: none;
+        &__link {
+            padding: 20px 30px;
         }
+    }
+    .hamburger__wrapper {
+        display: block;
     }
     .hamburger {
         display: block;
     }
     .promo {
+        padding-bottom: 60px;
         &__glopt {
             font-size: 17px;
         }
@@ -176,6 +173,15 @@
             margin-left: 20px;
             margin-right: 20px;
         }
+        &__descr {
+            font-size: 15px;
+        }
+    }
+    .title {
+        font-size: 20px;
+    }
+    .subtitle {
+        font-size: 15px;
     }
     .button_submit {
         margin-top: 10px;
@@ -197,5 +203,72 @@
         &__card {
             width: 100%;
         }
+    }
+    .slick-prev {
+        left: 140px;
+    }
+    .slick-next {
+        right: 140px;
+    }
+    .footer__wrapper {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 575px) {
+    .promo {
+        &__glopt {
+            font-size: 15px;
+        }
+        &__header {
+            font-size: 25px;
+            line-height: 40px;
+        }
+        &__utp-item {
+            margin-top: 0;
+        }
+    }
+    .work__item {
+        width: 100%;
+    }
+    .slick-prev {
+        left: 15px;
+    }
+    .slick-next {
+        right: 15px;
+    }
+    .round_up {
+        width: 45px;
+        height: 45px;
+    }
+    .footer {
+        &__logo {
+            margin-bottom: 10px;
+            a {
+                height: 43px;
+            }
+        }
+        hr {
+            margin-top: 15px;
+        }
+        &__info {
+            padding: 0 15px 15px 15px;
+            justify-content: center;
+        }
+        .devs {
+            margin-top: 5px;
+        }
+        .year {
+            order: 2;
+            margin-top: 5px;
+        }
+    }
+    .round_up {
+        width: 40px;
+        height: 40px;
+
+    }
+    .modal {
+        width: 100%;
     }
 }

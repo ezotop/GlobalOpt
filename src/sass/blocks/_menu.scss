@@ -4,11 +4,13 @@ header {
 .hamburger {
     display: none;
 }
+.hamburger__wrapper {
+    display: none;
+}
 nav {
     position: absolute;
     padding-top: 23px;
-	width: 100vw;
-    z-index: 5;
+	width: 100%;
 }
 .menu {
     display: flex;
@@ -35,6 +37,9 @@ nav {
         li:last-child {
             border: none;
             padding-right: 0;
+        }
+        &_active {
+            z-index: 5;
         }
     }
     &__item {

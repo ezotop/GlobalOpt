@@ -32,7 +32,7 @@
                                 +7 (926) 423 01 00
                             </a>
                         </div>
-                        <button class="button">Перезвоните мне</button>
+                        <button class="button" id="callbackme">Перезвоните мне</button>
                     </div>
                 </div>
                 <div class="hamburger">
@@ -203,7 +203,7 @@
                     <div class="prices-item__descr">
                         Морские перевозки грузов из Китая в Россию за 35 дней с прохождением таможни
                     </div>
-                    <button class="button">Подробнее</button>
+                    <button class="button details">Подробнее</button>
                 </div>
                 <div class="prices-item">
                     <div class="prices-item__header">Ж/Д доставка</div>
@@ -213,7 +213,7 @@
                     <div class="prices-item__descr">
                         ЖД перевозки грузов из Китая в Россию от 2 недель с прохождением таможни
                     </div>
-                    <button class="button">Подробнее</button>
+                    <button class="button details">Подробнее</button>
                 </div>
                 <div class="prices-item">
                     <div class="prices-item__header">Автодоставка</div>
@@ -223,7 +223,7 @@
                     <div class="prices-item__descr">
                         Автоперевозки грузов из Китая в Россию от 2 недель с прохождением таможни
                     </div>
-                    <button class="button">Подробнее</button>
+                    <button class="button details">Подробнее</button>
                 </div>
                 <div class="prices-item">
                     <div class="prices-item__header">Авиа доставка</div>
@@ -233,7 +233,7 @@
                     <div class="prices-item__descr">
                         Авиаперевозки грузов из Китая в Россию до 2 недель с прохождением таможни
                     </div>
-                    <button class="button">Подробнее</button>
+                    <button class="button details">Подробнее</button>
                 </div>
             </div>
         </div>
@@ -242,7 +242,6 @@
     <section class="consultation">
         <div class="container">
             <div class="title">Заказать бесплатную консультацию</div>
-        
             <form id="consultation-form" class="feed-form" action="#">
                 <div class="round round_orange"><img src="icons/consultation.png" alt="operator"></div>
                 <div class="feed-form__wrapper">
@@ -360,7 +359,7 @@
                     <div class="question-form__header">Остались вопросы?</div>
                     <div class="question-form__subheader">Напишите нам!</div>
                 </div>
-                <form id="consultation-form" class="feed-form feed-form_question" action="#">
+                <form class="feed-form feed-form_question" action="#">
                     <div class="feed-form__wrapper">
                         <input class="feed-form__window" name="name" placeholder="Ваше имя..." type="text">
                         <input class="feed-form__window" name="phone" placeholder="Ваш номер телефона..." type="tel">
@@ -389,7 +388,7 @@
                             +7 (926) 423 01 00
                         </a>
                     </div>
-                    <button class="button">Перезвоните мне</button>
+                    <button class="button callbackme">Перезвоните мне</button>
                 </div>
             </div>
             <hr>
@@ -407,12 +406,45 @@
     <a href="#up" class="pageup">
         <div class="round round_up"><img src="icons/up-arrow.svg" alt="up"></div>
     </a>
+
+    <div class="overlay">
+        <div class="modal" id="consultation_modal">
+            <div class="modal__header"></div>
+            <div class="modal__close">&times;</div>
+            <form class="feed-form" action="#">
+                <div class="round round_orange"><img src="icons/consultation.png" alt="operator"></div>
+                <div class="feed-form__wrapper feed-form__wrapper_modal">
+                    <input class="feed-form__window" name="name" placeholder="Ваше имя..." type="text">
+                    <input class="feed-form__window" name="phone" placeholder="Ваш номер телефона..." type="tel">
+                    <input class="feed-form__window" name="email" placeholder="Ваш e-mail..." type="email">
+                </div>
+                <button class="button button_submit">отправить заявку</button>
+            </form>
+        </div>
+        <div class="modal" id="callback">
+            <div class="title">Мы вам перезвоним</div>
+            <div class="modal__close">&times;</div>
+            <form class="feed-form" action="#">
+                <div class="round round_orange"><img src="icons/consultation.png" alt="operator"></div>
+                <div class="feed-form__wrapper feed-form__wrapper_modal">
+                    <input class="feed-form__window" name="name" placeholder="Ваше имя..." type="text">
+                    <input class="feed-form__window" name="phone" placeholder="Ваш номер телефона..." type="tel">
+                    <input class="feed-form__window" name="email" placeholder="Ваш e-mail..." type="email">
+                </div>
+                <button class="button button_submit">отправить заявку</button>
+            </form>
+        </div>
+        <div class="modal" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="subtitle subtitle_modal">Мы Вам уже звоним!</div>
+        </div>
+    </div>
     
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

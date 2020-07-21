@@ -36,6 +36,7 @@
     border: none;
     height: 44px;
     width: 44px;
+    z-index: 4;
     img {
         height: 100%;
     }
@@ -45,7 +46,6 @@
     top: 57px;
     transform: translateY(-50%);
     left: 150px;
-    z-index: 5;
 }
 .slick-next {
     left: auto;

@@ -8,7 +8,9 @@
     font-size: 12px;
     font-weight: 400;
     text-transform: uppercase;
-    outline: none;
+    &:focus {
+        outline: none;
+    }
     &_count {
         display: block;
         width: 230px;
