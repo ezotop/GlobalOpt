@@ -80,7 +80,7 @@ $(document).ready(function() {
         }).done(function() {
             $(this).find("input").val("");
             $('#consultation, #callback').fadeOut();
-            //$('.overlay, #thanks').fadeIn('slow');
+            $('.overlay, #thanks').fadeIn('slow');
             $('form').trigger('reset');
         });
         return false;
